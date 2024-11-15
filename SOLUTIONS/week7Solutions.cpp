@@ -286,3 +286,40 @@ Questions:
 1. What does traversal via recursion look like?
 2. How can we implement traversals without recursion?
 */
+
+/*
+Linked list
+struct Node {
+    int val;
+    Node* next;
+}
+
+Node* head;
+
+
+// Appending a node
+Node* ptr = head;
+
+if (head == nullptr) {
+    head = new Node(1);
+}
+else {
+    while(ptr->next == nullptr) {
+        ptr = ptr->next
+    }
+}
+ptr->next = new Node(10);
+
+// Deleting a node
+if (head == nullptr) { return; } // Don't do anythin
+Node* ptr = head;
+int target;
+while (ptr != nullptr) {
+    if (ptr->next->val == target) {
+        Node* newNext = ptr->next->next;
+        delete ptr->next;
+        ptr->next = newNext;
+        delete toDelete;
+    }
+}
+*/
