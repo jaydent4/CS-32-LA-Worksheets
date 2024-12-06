@@ -368,14 +368,13 @@ int main() {
     vector<Potato>::iterator it = potatoes.begin(); // 1
     while (it != potatoes.end()) {
         it = potatoes.erase(it);  // 2
-        it++;
     }
     for (it = potatoes.begin(); it != potatoes.end(); it++) {
         cout << it->getSize() << endl;  // 3
     }
 }
 ANSWER:
-1. int Potatoes (two types)
+1. int (wrong type)
 2. erase returns an iterator to the next item, iterators are also invalidated when we delete something so iterating it will not work
 3. iterators use pointer syntax
 */
